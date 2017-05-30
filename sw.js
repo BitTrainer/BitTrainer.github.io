@@ -37,7 +37,7 @@ self.addEventListener('install', function(event) {
         caches.open(CACHE_NAME)
         .then(cache => {
             appLog.logInfo("Opened cache");
-            return cache.addAll(["/"]);
+            return cache.addAll(["/appLog.js"]);
         })
     );
 });
